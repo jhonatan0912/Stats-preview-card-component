@@ -35,8 +35,13 @@ body{
 }
 .card__img{
   width: 100%;
+}
+.card__container-img{
+  background:linear-gradient(hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5)), url(./images/image-header-desktop.jpg);
+  background-size: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  height: 200px;
 }
 .card__content{
   padding: 1em;
@@ -85,6 +90,9 @@ body{
     display: flex;
     flex-direction: row-reverse;
   }
+  .title{
+    font-size: 2.2em;
+  }
   .card__container-img{
     width: 50%;
   }
@@ -107,6 +115,12 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 0 15px;
+  }
+  .card__container-img{
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 500px;
   }
 }
 @media (min-width:1920px) {
